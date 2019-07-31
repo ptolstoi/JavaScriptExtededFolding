@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>de.pault.ideal.JavaScriptExtendedFolding</id>
+    <name>JavaScript Extended Folding</name>
+    <version>1.0</version>
+    <vendor url="https://github.com/ptolstoi">Paul Tolstoi</vendor>
+
+    <description><![CDATA[
+      Folds JavaScript to enhance readability for non-modern JavaScript.
+    ]]></description>
+
+    <!--<change-notes><![CDATA[
+      ]]>
+    </change-notes>-->
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>JavaScript</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.foldingBuilder order="LAST" language="JavaScript"
+                             implementationClass="de.pault.idea.javaScriptExtendedFolding.Folding"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
